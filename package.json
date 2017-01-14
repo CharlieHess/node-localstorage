@@ -1,6 +1,6 @@
 {
-  "name": "node-localstorage",
-  "version": "1.3.0",
+  "name": "node-localstorage-fsync",
+  "version": "0.0.2",
   "main": "./LocalStorage",
   "description": "A drop-in substitute for the browser native localStorage API that runs on node.js.",
   "keywords": [
@@ -8,17 +8,14 @@
     "Web Storage",
     "node.js"
   ],
-  "author": {
-    "name": "Larry Maccherone",
-    "url": "http://maccherone.com"
-  },
-  "homepage": "https://github.com/lmaccherone/node-localstorage",
+  "author": "Charlie Hess",
+  "homepage": "https://github.com/CharlieHess/node-localstorage/tree/crash-safe",
   "engines": {
     "node": ">=0.12"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/lmaccherone/node-localstorage.git"
+    "url": "http://github.com/CharlieHess/node-localstorage.git#crash-safe"
   },
   "preferGlobal": false,
   "devDependencies": {
