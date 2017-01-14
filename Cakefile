@@ -39,18 +39,13 @@ task('compile', 'Compile CoffeeScript source files to JavaScript', () ->
 )
 
 task('test', 'Run the CoffeeScript test suite with nodeunit', () ->
-  invoke('testES6')
   {reporters} = require('nodeunit')
   process.chdir(__dirname)
-  reporters.default.run(['test'], undefined, (failure) -> 
+  reporters.default.run(['test'], undefined, (failure) ->
     if failure?
       console.log(failure)
       process.exit(1)
   )
-)
-
-task('testES6', 'Run tests in testES6 folder with --harmony-proxies flag', () ->
-  runSync("node --harmony-proxies $(which nodeunit) testES6/*.coffee")
 )
 
 task('publish', 'Publish to npm and add git tags', () ->
