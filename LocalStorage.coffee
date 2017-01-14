@@ -1,7 +1,7 @@
 path = require('path')
 fs = require('fs')
 events = require('events')
-writeSync = require('write-file-atomic').sync
+writeSync = require('write-file-atomic-fsync').sync
 
 KEY_FOR_EMPTY_STRING = '---.EMPTY_STRING.---'  # Chose something that no one is likely to ever use
 
